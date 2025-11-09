@@ -6,31 +6,41 @@ import HomePage from "../pages/HomePage";
 import UserDashboard from "../pages/UserDashboard";
 import About from "../components/About";
 
-export let myRoutes = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <HomePage />,
-      },
-      {
-        path: "/login",
-        element: <LoginPage />,
-      },
-      {
-        path: "/signup",
-        element: <SignupPage />,
-      },
-      {
-        path :"/userdashboard/:id",
-        element : <UserDashboard/>
-      },
+export const myRoutes = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      errorElement: <h2>Page Not Found 😢</h2>, // optional
+      children: [
         {
-        path :"about",
-        element : <About/>
-      }
-    ],
-  },
-]);
+          path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/login",
+          element: <LoginPage />,
+        },
+        {
+          path: "/signup",
+          element: <SignupPage />,
+        },
+        {
+          path: "/userdashboard/:id",
+          element: <UserDashboard />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "*",
+          element: <Navigate to="/" />, // optional catch-all redirect
+        },
+      ],
+    },
+  ],
+  {
+    basename: "/Crud", // 👈 THIS LINE IS THE FIX
+  }
+);

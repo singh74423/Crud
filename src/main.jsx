@@ -1,20 +1,12 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import Home from "../pages/Home";
-// ...other imports
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import { myRoutes } from "./routes/Routing";
+import AuthContextProvider from "./context/AuthContext";
+import App from "./App"; // ✅ this line
 
-export const myRoutes = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <App />,
-      children: [
-        { path: "/", element: <Home /> },
-        // other routes...
-      ],
-    },
-  ],
-  {
-    basename: "/Crud", // 👈 Add this line
-  }
+createRoot(document.getElementById("root")).render(
+  <AuthContextProvider>
+    <RouterProvider router={myRoutes} />
+  </AuthContextProvider>
 );
