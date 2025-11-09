@@ -1,0 +1,153 @@
+{
+  "users": [
+    {
+      "id": "8d24",
+      "username": "test1",
+      "email": "test1@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "3e63",
+      "username": "test2",
+      "email": "test2@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "e803",
+      "username": "test3",
+      "email": "test3@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "bfb2",
+      "username": "test4",
+      "email": "test4@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "f399",
+      "username": "test5",
+      "email": "test5@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "8343",
+      "username": "test6",
+      "email": "test6@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "bd08",
+      "username": "utk",
+      "email": "utk@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "81f5",
+      "username": "intel",
+      "email": "intel@12",
+      "password": "12"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Role Based Access Control",
+      "description": "rbac allows assigning roles and permissions to users in a secure and manageable way in applications",
+      "category": "Security",
+      "createdBy": {
+        "_id": "64a1f3b4c9d8f20011a1a119",
+        "userName": "Manish Tiwari"
+      },
+      "createdAt": "2025-08-09T12:50:00Z",
+      "updatedAt": "2025-08-09T12:50:00Z",
+      "id": "3103"
+    },
+    {
+      "title": "Optimizing Express Performance",
+      "description": "express apps can be optimized by using compression caching clustering and monitoring",
+      "category": "Express.js",
+      "createdBy": {
+        "_id": "64a1f3b4c9d8f20011a1a120",
+        "userName": "Rohit Jain"
+      },
+      "createdAt": "2025-08-10T14:05:00Z",
+      "updatedAt": "2025-08-10T14:05:00Z",
+      "id": "0d74"
+    },
+    {
+      "title": "Introduction to MERN Stack",
+      "description": "mern stack combines mongodb express react and nodejs to build full stack applications",
+      "category": "MERN",
+      "createdBy": {
+        "_id": "64a1f3b4c9d8f20011a1a121",
+        "userName": "Divya Kapoor"
+      },
+      "createdAt": "2025-08-11T16:15:00Z",
+      "updatedAt": "2025-08-11T16:15:00Z",
+      "id": "7b55"
+    },
+    {
+      "title": "Caching Strategies for APIs",
+      "description": "caching improves performance by storing responses at client server or proxy level reducing load",
+      "category": "API",
+      "createdBy": {
+        "_id": "64a1f3b4c9d8f20011a1a122",
+        "userName": "Arjun Nair"
+      },
+      "createdAt": "2025-08-12T09:35:00Z",
+      "updatedAt": "2025-08-12T09:35:00Z",
+      "id": "cbde"
+    },
+    {
+      "title": "Working with MongoDB Indexes",
+      "description": "indexes in mongodb speed up queries but come with trade offs of extra storage and slower writes",
+      "category": "MongoDB",
+      "createdBy": {
+        "_id": "64a1f3b4c9d8f20011a1a123",
+        "userName": "Kavita Joshi"
+      },
+      "createdAt": "2025-08-13T11:00:00Z",
+      "updatedAt": "2025-08-13T11:00:00Z",
+      "id": "f629"
+    },
+    {
+      "title": "Understanding Bcrypt for Passwords",
+      "description": "bcrypt is used to securely hash and compare passwords providing strong protection against attacks",
+      "category": "Security",
+      "createdBy": {
+        "_id": "64a1f3b4c9d8f20011a1a124",
+        "userName": "Gaurav Mishra"
+      },
+      "createdAt": "2025-08-14T13:25:00Z",
+      "updatedAt": "2025-08-14T13:25:00Z",
+      "id": "8c14"
+    },
+    {
+      "title": "Introduction to WebSockets",
+      "description": "websockets allow two way communication between client and server for realtime applications",
+      "category": "Web",
+      "createdBy": {
+        "_id": "64a1f3b4c9d8f20011a1a125",
+        "userName": "Simran Kaur"
+      },
+      "createdAt": "2025-08-15T15:40:00Z",
+      "updatedAt": "2025-08-15T15:40:00Z",
+      "id": "3eb6"
+    },
+    {
+      "id": "1e44",
+      "title": "uu",
+      "category": "Development",
+      "description": "jdjhvjhs",
+      "userId": "81f5"
+    },
+    {
+      "id": "66fb",
+      "title": "ff",
+      "category": "dd",
+      "description": "dvdf",
+      "userId": "81f5"
+    }
+  ]
+}
+
