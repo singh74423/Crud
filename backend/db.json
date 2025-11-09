@@ -47,6 +47,12 @@
       "username": "intel",
       "email": "intel@12",
       "password": "12"
+    },
+    {
+      "id": "c3b3",
+      "username": "intel",
+      "email": "intel@123",
+      "password": "1333"
     }
   ],
   "blogs": [
@@ -150,4 +156,3 @@
     }
   ]
 }
-
