@@ -4,6 +4,7 @@ import { FaBehance, FaDribbble, FaHome } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import About from "./About";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const {loggedInUser} = useContext(AuthContext)
