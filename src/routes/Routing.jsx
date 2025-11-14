@@ -1,3 +1,4 @@
+// routes/Routing.js
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "../App";
 import LoginPage from "../pages/LoginPage";
@@ -13,34 +14,16 @@ export const myRoutes = createBrowserRouter(
       element: <App />,
       errorElement: <h2>Page Not Found 😢</h2>, // optional
       children: [
-        {
-          path: "/",
-          element: <HomePage />,
-        },
-        {
-          path: "/login",
-          element: <LoginPage />,
-        },
-        {
-          path: "/signup",
-          element: <SignupPage />,
-        },
-        {
-          path: "/userdashboard/:id",
-          element: <UserDashboard />,
-        },
-        {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "*",
-          element: <Navigate to="/" />, // optional catch-all redirect
-        },
+        { path: "/", element: <HomePage /> },
+        { path: "/login", element: <LoginPage /> },
+        { path: "/signup", element: <SignupPage /> },
+        { path: "/userdashboard/:id", element: <UserDashboard /> },
+        { path: "/about", element: <About /> },
+        { path: "*", element: <Navigate to="/" /> }, // catch-all redirect
       ],
     },
   ],
   {
-    basename: "/Crud", // 👈 THIS LINE IS THE FIX
+    basename: "/", // ✅ Vercel root deploy fix
   }
 );
