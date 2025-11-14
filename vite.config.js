@@ -4,5 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/Crud/', // 👈 must match your repo name exactly
+  base: './', // relative paths for assets, fixes 404 on Vercel
+  build: {
+    chunkSizeWarningLimit: 2000, // optional: ignore >500 kB warning
+  },
 })
